@@ -1,0 +1,17 @@
+{
+  "name": "employeedirectory",
+  "description": "This application will have the employee details which will be stored in mongo db",
+  "main": "index.js",
+  "authors": [
+    "Anusha Muthyalampally"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
