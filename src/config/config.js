@@ -2,7 +2,7 @@ var env = 'LOCAL';
 var props = {
     LOCAL: {
         app: {
-            port: 8000 || process.env.PORT
+            port: process.env.PORT
         }
     }
 };
