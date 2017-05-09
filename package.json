@@ -9,7 +9,11 @@
   "author": "Anusha Muthyalampally",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "kerberos": "0.0.23",
+    "mongo": "^0.1.0",
+    "mongojs": "^2.4.0",
     "nodemon": "^1.11.0"
   }
 }

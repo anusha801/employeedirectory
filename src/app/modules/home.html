@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html ng-app="employeedirectory">
+<html ng-app="employeedirectory" ng-controller="homeController">
 
 <head>
     <title>Employee Directory</title>
     <link type="text/css" rel="stylesheet" href="./../bootstrap.min.css" />
+    
 </head>
 
 <body>
-    <div class="container" ng-controller="homeController">
+    <div class="container" >
         <br/>
         <h1 align="center">Employee Directory</h1><br/><br/>
         <table class="table">
@@ -52,7 +53,7 @@
                     </form>
                 </tr>
 
-                <!--<tr ng-repeat="employee in employees">
+                <tr ng-repeat="employee in employees track by $index">
                     <td>{{employee.name}}</td>
                     <td>{{employee.email}}</td>
                     <td>{{employee.dob | date:'yyyy-MM-dd'}}</td>
@@ -64,7 +65,7 @@
                         <button class="btn btn-primary btn-sm" ng-click="editEmployee(employee._id)">Edit</button>
                     </td>
 
-                </tr>-->
+                </tr>
 
 
             </tbody>
@@ -72,8 +73,12 @@
         </table>
     </div>
 
-    <!--<script src="/libs/js/angular.min.js"></script>-->
+    <script src="./../angular.js"></script>
+ 
     <script src="./home.controller.js"></script>
+    <script src="./home.service.js"></script>
+    <!--<script src="./route.js"></script>-->
+    
 </body>
 
 </html>
